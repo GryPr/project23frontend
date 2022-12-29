@@ -8,7 +8,7 @@
 	import Keycloak from 'keycloak-js';
 
 	function initKeycloak() {
-		let keycloak = new Keycloak(KC_CONFIG)
+		const keycloak = new Keycloak(KC_CONFIG)
 		keycloak
 			.init(KC_INIT_OPTIONS)
 			.then(function (authenticated) {
